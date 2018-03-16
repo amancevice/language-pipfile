@@ -1,5 +1,5 @@
 {
-  "name": "language-pipenv",
+  "name": "language-pipfile",
   "version": "0.1.4",
   "description": "Pipfile symtax highlighting",
   "repository": "https://github.com/amancevice/language-pipfile",
