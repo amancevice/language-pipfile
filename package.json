@@ -1,6 +1,6 @@
 {
   "name": "language-pipenv",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Pipfile symtax highlighting",
   "repository": "https://github.com/amancevice/language-pipfile",
   "license": "MIT",
