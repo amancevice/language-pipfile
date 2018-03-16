@@ -1,0 +1,86 @@
+'name': 'Pipfile'
+'fileTypes': [
+  'Pipfile'
+]
+'patterns': [
+  {
+    'begin': '(^[\\s]+)?(?=#)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.pipfile'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '#'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.pipfile'
+        'end': '\\n'
+        'name': 'comment.line.number-sign.pipfile'
+      }
+    ]
+  }
+  {
+    'begin': '(^[\\s]+)?(?=;)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.pipfile'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': ';'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.pipfile'
+        'end': '\\n'
+        'name': 'comment.line.semicolon.pipfile'
+      }
+    ]
+  }
+  {
+    'captures':
+      '1':
+        'name': 'punctuation.definition.entity.pipfile'
+      '3':
+        'name': 'punctuation.definition.entity.pipfile'
+    'match': '^(\\[\\[?)(.*?)(\\]\\]?)'
+    'name': 'entity.name.section.group-title.pipfile'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.other.definition.pipfile'
+      '2':
+        'name': 'punctuation.separator.key-value.pipfile'
+    'match': '^([\\[\\][\\s*]a-zA-Z0-9_.-]+)\\s*(=|:)'
+  }
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.pipfile'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.pipfile'
+    'name': 'string.quoted.single.pipfile'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.pipfile'
+      }
+    ]
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.pipfile'
+    'end': '[!^\\"](?!.*\")'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.pipfile'
+    'name': 'string.quoted.double.pipfile'
+  }
+]
+'scopeName': 'source.pipfile'
